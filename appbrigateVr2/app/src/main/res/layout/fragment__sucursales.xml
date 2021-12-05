@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Sucursales">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtViemTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:backgroundTint="#673AB8"
+            android:text="Sucursales"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewSucursarNorte"
+            android:layout_width="129dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txtViemTitle"
+            app:layout_constraintTop_toBottomOf="@+id/txtViemTitle"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txtTitleSucursalNorte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:text="Norte"
+            android:textAlignment="center"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSucursarNorte"
+            app:layout_constraintTop_toBottomOf="@+id/txtViemTitle" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Calle 127  #45-06 Barrio Mazuren"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSucursarNorte"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleSucursalNorte" />
+
+        <Button
+            android:id="@+id/btn_como_llegar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Como LLegar"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewSucursarNorte"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSucursarNorte" />
+
+        <Button
+            android:id="@+id/btn_llamar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Llamar"
+            android:textSize="10sp"
+            app:icon="@drawable/ic_baseline_call_24"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_como_llegar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_como_llegar"
+            app:layout_constraintTop_toTopOf="@+id/btn_como_llegar" />
+
+        <ImageView
+            android:id="@+id/imageViewSucursal2"
+            android:layout_width="129dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSucursarNorte"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txtTitleSucursalCentro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:textAlignment="center"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Centro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSucursal2"
+            app:layout_constraintTop_toTopOf="@+id/imageViewSucursal2" />
+
+        <TextView
+            android:id="@+id/txtDescriptionSede2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Carrera 13 # 2-45 Barrio las aguas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSucursal2"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleSucursalCentro" />
+
+        <Button
+            android:id="@+id/btnComoLlegarSucursal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Como Llegar"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewSucursal2"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSucursal2" />
+
+        <Button
+            android:id="@+id/btnLlamarSucursal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            app:icon="@drawable/ic_baseline_call_24"
+            android:text="Llamar"
+            app:layout_constraintBottom_toBottomOf="@+id/btnComoLlegarSucursal2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnComoLlegarSucursal2"
+            app:layout_constraintTop_toTopOf="@+id/btnComoLlegarSucursal2" />
+
+        <ImageView
+            android:id="@+id/imageViewSucursal3"
+            android:layout_width="129dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSucursal2"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txtTitleSucursalSur"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:textAlignment="center"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Sur"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSucursal3"
+            app:layout_constraintTop_toTopOf="@+id/imageViewSucursal3" />
+
+        <TextView
+            android:id="@+id/txtDescriptionSede3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Calle 86d bis Sur  # 45f - 87 Barrio el Tunal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSucursal3"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleSucursalSur" />
+
+        <Button
+            android:id="@+id/btnComoLlegarSucursal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Como Llegar"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewSucursal3"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSucursal3" />
+
+        <Button
+            android:id="@+id/btnLlamarSucursal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            app:icon="@drawable/ic_baseline_call_24"
+            android:text="Llamar"
+            app:layout_constraintBottom_toBottomOf="@+id/btnComoLlegarSucursal3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnComoLlegarSucursal3"
+            app:layout_constraintTop_toTopOf="@+id/btnComoLlegarSucursal3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

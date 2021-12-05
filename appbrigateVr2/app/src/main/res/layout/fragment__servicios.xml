@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Servicios">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="411dp"
+            android:layout_height="30dp"
+            android:background="#3F51B5"
+            android:backgroundTint="#673AB8"
+            android:text="Servicios"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewDomicilio"
+            android:layout_width="134dp"
+            android:layout_height="138dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txtViewTitleService1"
+            android:layout_width="275dp"
+            android:layout_height="22dp"
+            android:background="#0741AC"
+            android:text="Domicilios"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toEndOf="@+id/imageViewDomicilio"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <TextView
+            android:id="@+id/txtViewDescripService1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Despachos solo en la ciudad de bogota, de lunes a viernes entre las 8am y 7pm"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageViewDomicilio"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewTitleService1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Llamar"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewDomicilio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewDomicilio"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewDescripService1" />
+
+        <ImageView
+            android:id="@+id/imageViewReparacion"
+            android:layout_width="134dp"
+            android:layout_height="138dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDomicilio"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txtViewTitleService2"
+            android:layout_width="275dp"
+            android:layout_height="22dp"
+            android:background="#0741AC"
+            android:text="Reparaciones"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toEndOf="@+id/imageViewReparacion"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDomicilio" />
+
+        <TextView
+            android:id="@+id/txtViewDescripService2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Despachos solo en la ciudad de bogota, de lunes a viernes entre las 8am y 7pm"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageViewReparacion"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewTitleService2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_call2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solicitar"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewReparacion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewReparacion"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewDescripService2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
